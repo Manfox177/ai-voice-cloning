@@ -3724,7 +3724,7 @@ def unload_tts():
 	do_gc()
 
 def reload_tts():
-	subprocess.Popen(["../start.sh"])
+	subprocess.Popen(["./start.sh"])
 	with open("reload_flag.txt", "w") as f:
 		f.write("reload")
 	os.kill(os.getpid(), signal.SIGTERM)  # Or signal.SIGKILL for an even harder kill
