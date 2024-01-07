@@ -16,3 +16,4 @@ websockets
 beartype==0.15.0
 pykakasi
 rotary-embedding-torch==0.4.0
+deepspeed
